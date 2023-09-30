@@ -4,3 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.contenedor{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* whatsaap */
+#whatsaap{ width:60px; position: fixed; bottom: 50px; right: 30px;  }
+
+.foot{text-align:center;padding:8px;background-color: #000000; color: rgb(235, 232, 229);  }
