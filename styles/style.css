@@ -4,8 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-                            /* INICIO DEL HEADER */
+/* INICIO DEL HEADER */
 header{
     display: flex;
     align-items: center;
@@ -140,4 +139,4 @@ header .nav2 div .fondo2:hover{
         width: 50%;
     }
 }
-                       /* FIN DEL HEADER */
+/* FIN DEL RESPONSIVE HEADER */
