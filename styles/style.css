@@ -29,6 +29,7 @@ header .nav1 .logo{
     text-decoration: none;
     transition: .7s;
 }
+
 header .nav1 nav{
     width: 70%;
     display: flex;
