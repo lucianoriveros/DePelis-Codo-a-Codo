@@ -98,18 +98,18 @@ header .nav2 div .fondo2:hover{
 }
 @media(max-width: 950px){
     header .nav1{
-        width: 44%;
+        width: 50%;
     }
     header .nav1 i{
         display: block;
-        margin-left: 30px;
+        margin-left: 0;
     }  
     header .nav1 nav{
         position: fixed;
         display: inline-block;       
-        line-height: 30px;
+        line-height: 35px;
         width: 100%;
-        height: 35vh;
+        height: 50vh;
         top: 70px;
         margin-left: -100%;
         background-color: #23252b;
@@ -134,10 +134,20 @@ header .nav2 div .fondo2:hover{
     }
     header .nav1 i{
         display: flex;
-        margin-left: 5px;
+    }
+    header .nav1 .logo{
+        margin-left: 0;
+        margin-right: 0;
     }
     header .nav2{
         width: 50%;
+    }
+    header .nav2 div .fondo{
+        padding: 5px 13px;
+        margin-right: 2px;
+    }
+    header .nav2 div .fondo2{
+        padding: 5px 13px;
     }
 }
 /* FIN DEL RESPONSIVE HEADER */
