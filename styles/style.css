@@ -216,12 +216,11 @@ body section{
 
 .peli-detalles {
 	font-size: 1em;
-	min-height: 100vh;
+	min-height: 10gi0vh;
 	color: #fff;
 	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/detalles/imgFondo.jpg);
 	background-position: center center;
 	background-size: cover;
-	margin-bottom: 3.12em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -295,4 +294,11 @@ body section{
 	}
 
 }
-.foot{text-align:center;padding:8px;background-color: #000000; color: rgb(235, 232, 229);  }
+
+.foot{
+	text-align: center;
+	padding: 8px;
+	background-color: #000000; 
+	color: rgb(235, 232, 229); 
+	bottom: 0; 
+}
