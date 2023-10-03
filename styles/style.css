@@ -4,3 +4,294 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* INICIO DEL HEADER */
+header{
+    display: flex;
+    align-items: center;
+    background-color: #23252b;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+/* PRIMERA BARRA DE NAVEGACION */
+header .nav1{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+header .nav1 .logo{
+    color: rgb(2, 139, 202);
+    font-size: 30px;
+    margin-left: 120px;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: .7s;
+}
+
+header .nav1 nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .nav1 nav a{
+    color: rgb(194, 194, 194);
+    padding: 10px 5px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+}
+header .nav1 nav a:hover{
+    background-color: rgb(0, 116, 170);
+    color: white;
+    border-radius: 20px;
+}
+header .nav1 i{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+/* SEGUNDA BARRA DE NAVEGACION */
+header .nav2{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+header .nav2 div .fondo{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 120px; 
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: rgb(66, 66, 66);
+}
+header .nav2 div .fondo:hover{
+    box-shadow: 0 0 15px rgb(0, 116, 170);
+}
+header .nav2 div .fondo2{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 120px; 
+    text-decoration: none;
+    background-color: rgb(0, 116, 170);
+}
+header .nav2 div .fondo2:hover{
+    box-shadow: 0 0 15px rgb(180, 180, 180);
+    
+}
+/* FIN DE LA SEGUNDA BARRA DE NAVEGACION */
+
+/* RESPONSIVE DEL HEADER */
+@media(max-width: 1150px){
+    header .nav1{
+        width: 55%;
+    }
+    header .nav1 .logo{
+        margin-left: 50px;
+    }
+}
+@media(max-width: 950px){
+    header .nav1{
+        width: 50%;
+    }
+    header .nav1 i{
+        display: block;
+        margin-left: 0;
+    }  
+    header .nav1 nav{
+        position: fixed;
+        display: inline-block;       
+        line-height: 35px;
+        width: 100%;
+        height: 50vh;
+        top: 70px;
+        margin-left: -100%;
+        background-color: #23252b;
+        transition: all .2s;
+    }
+    header .nav1 nav a{
+        display:block;
+        margin: 0 auto;
+    }
+    header .nav1 nav.mobile-menu{
+        margin-left: 0;
+        transition: all .5s;
+    }
+    header .nav2{
+        width: 48%;
+    }
+}
+
+@media(max-width: 450px){
+    header .nav1 .logo{
+        margin-left: 20px;
+    }
+    header .nav1 i{
+        display: flex;
+    }
+    header .nav1 .logo{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    header .nav2{
+        width: 50%;
+    }
+    header .nav2 div .fondo{
+        padding: 5px 13px;
+        margin-right: 2px;
+    }
+    header .nav2 div .fondo2{
+        padding: 5px 13px;
+    }
+}
+/* FIN DEL RESPONSIVE HEADER */
+
+/* Estilos para la targeta en el index.html */
+main h2{
+	color: #fff;
+	font-size: 2em;
+	margin: 6% 0 0 10% ;
+}
+
+
+body section{
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.peli-tarjeta{
+	width: 20%;
+	height: 35%;
+	padding: 1em;
+	margin: 2em;
+	color: #fff;
+	/* background-color: indigo; */
+	background-color: #00000060;
+	border-radius: 0.6em;
+	box-shadow: 0 0 0.2em black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 1s ease all;
+}
+
+.peli-tarjeta:hover{
+	scale: 1.1;
+	box-shadow: 0 0 0.6em black;
+}
+
+.peli-tarjeta img{
+	width: 100%;
+	border-radius: 0.6em;
+	box-shadow: 0 0 0.3em 0.01em black;
+}
+
+.peli-tarjeta h3{
+	margin: 0.4em 0 0.2em 0;
+	text-shadow: 0 0 1em black;
+}
+
+.peli-tarjeta p{
+	margin: 0 0 0.2em 0;
+	text-shadow: 0 0 1em black;
+}
+
+/* ---- ----- ----- Estilos para página detalles.html ---- ----- ----- */
+
+.peli-detalles {
+	font-size: 1em;
+	min-height: 100vh;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/detalles/imgFondo.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+.peli-detalles .contenedor {
+	width: 50%;
+	height: 80%;
+	margin-left: 6%;
+}
+
+.peli-poster{
+	width: 50%; 
+	height: 80%;
+	border-radius: 0.6em;
+	box-shadow: 0 0 0.6em 0.01em black;
+}
+
+.peli-detalles .titulo {
+	font-weight: 600;
+	font-size: 2.5em;
+	margin: 0.2em 0 0.2em 0;
+	text-shadow: 0 0 1em black;
+}
+
+.peli-detalles .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-bottom: 1.2em;
+	text-align: justify;
+	text-shadow: 0 0 1em black;
+}
+
+.btn-detalles {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.32em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+	text-decoration: none;
+}
+
+.btn-detalles:hover {
+	background: rgba(0, 116, 170, 0.788);
+}
+
+.btn-detalles:active {
+	background: rgba(0, 116, 170, 0.938);
+}
+
+/* ---- ----- ----- Media Queries para página detalles.html ----- ----- ----- */
+@media screen and (max-width: 425px) {
+
+	.peli-detalles {
+		font-size: 0.7em;
+		align-items: center;
+	}
+
+	.peli-detalles .contenedor {
+		width: 90%;
+		margin-left: 0;
+	}
+
+	.peli-poster{
+		width: 100%; 
+	}
+
+}
