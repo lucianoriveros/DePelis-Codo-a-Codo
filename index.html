@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DePelis</title>
+    <title>DEPELIS</title>
     <!-- estilos -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon -->
@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- bootstrap-icons --> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 </head>
 <body>
     <!-- INICIO DEL HEADER -->
     <header>
-        <div class="nav1">
+        <div class="nav1" id="header">
             <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo" height="68px"></a>
             <nav>
                 <a href="#explorar">Explorar</a>
@@ -27,18 +28,53 @@
             </nav>
             <i class="bi bi-list"></i>
         </div>
-        <div class="nav2">
-            <div>
-                <a class="fondo" href="#">Login</a>
-                <a class="fondo2" href="#">Registrarte</a>
-            </div>
-        <div>
     </header>
     <!-- FIN DEL HEADER -->
 
     <!-- INICIO DE MAIN -->
     <main>
-        <h2>Ciencia Ficción</h2>
+        <!-- SLIDER -->
+        <section id="container-slider">	
+            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="bi bi-chevron-double-left"></i></a>
+            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="bi bi-chevron-double-right"></i></a>
+            <ul class="listslider">
+              <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+              <li><a itlist="itList_1" href="#"></a></li>
+              <li><a itlist="itList_2" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+              <li style="background-image: url('./img/detalles/imgFondo.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                  <div>
+                    <h2>INTERESTELLAR</h2>
+                    <p>Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.</p>
+                    <a href="./pages/detalles.html" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+              </li>
+              <li style="background-image: url('https://cdn.pixabay.com/photo/2013/04/11/02/20/film-102681_1280.jpg'); ">
+                <div class="content_slider" >
+                  <div>
+                    <h2>INTERESTELLAR</h2>
+                    <p>Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.</p>
+                    <a href="./pages/detalles.html" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+              </li>
+              <li style="background-image: url('https://cdn.pixabay.com/photo/2018/10/26/11/14/man-3774381_1280.jpg'); ">
+                <div class="content_slider" >
+                  <div>
+                    <h2>INTERESTELLAR</h2>
+                    <p>Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.</p>
+                    <a href="./pages/detalles.html" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+              </li>
+           </ul>
+        </section>
+        <!-- FIN SLIDER -->
+
+        <h2>CIENCIA FICCIÓN</h2>
         <hr style="margin-left: 3em;margin-right: 3em">
         <section>
 
@@ -101,11 +137,22 @@
         </section>
     </main>
     <!-- FIN DE MAIN -->
- <footer class="foot">
-    <a href="https://twitter.com/" target="_blank"><img src="img/twiter.png" alt="twiter" width="20px" height="20px"></a> <a href="https://facebook.com/" target="_blank"><img src="img/face.png" alt="facebook" width="20px" height="20px"></a> <a href="https://youtube.com/" target="_blank"><img src="img/you.png" alt="youtube" width="20px" height="20px"></a>
-        <p>Las mejores peliculas <b>DEPELIS.COM</b></p>
+
+    <!-- FOOTER -->
+     <footer class="foot">
+        <a href="https://twitter.com/" target="_blank">
+            <img src="../img/twiter.png" alt="twiter" width="20px" height="20px">
+        </a> 
+        <a href="https://facebook.com/" target="_blank">
+            <img src="../img/face.png" alt="facebook" width="20px" height="20px">
+        </a> 
+        <a href="https://youtube.com/" target="_blank">
+            <img src="../img/you.png" alt="youtube" width="20px" height="20px">
+        </a>
+        <p>LAS MEJORES PELÍCULAS <b>&copy;DEPELIS.COM</b></p>
     </footer>
-    
+    <!-- FIN FOOTER -->
+
     <!-- javascript -->
     <script src="./js/script.js"></script>
 </body>
