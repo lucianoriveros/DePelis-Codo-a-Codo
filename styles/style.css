@@ -526,11 +526,11 @@ main h2{
     padding: 2em;
     margin: 1em 0;
     caret-color: auto;
+    transition: 0.5s all ease;
 }
 
 .contenedor-contacto form input:focus-visible{
-    border: 0.3em solid rgb(60, 128, 255);
-    padding: 1.7em;
+    box-shadow: 0 0 1em cornflowerblue;
     outline: 0px;
 }
 
@@ -542,11 +542,11 @@ main h2{
     margin: 1em 0;
     caret-color: auto;
     outline: 0px;
+    transition: 0.5s all ease;
 }
 
 .contenedor-contacto form textarea:focus-visible{
-    border: 0.3em solid rgb(60, 128, 255);
-    padding: 1.7em;
+    box-shadow: 0 0 1em cornflowerblue;
     outline: 0px;
 }
 
