@@ -24,6 +24,8 @@
                 <a href="#series">Series</a>
                 <a href="#servicios">Servicios</a>
                 <a href="./pages/contacto.html">Contacto</a>
+                <a id="btn-abrir-popup" class="btn-abrir-popup">Usuarios</a>
+                
             </nav>
             <i class="bi bi-list"></i>
         </div>
@@ -140,6 +142,18 @@
             </div>
 
         </section>
+         <!-- popup + appi con user de jsonplaceholder -->
+        <div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times">X</i></a>
+				<h3>Usuarios premium</h3>
+				<hr><br>
+				<span id="userpremium">
+
+                </span>
+			</div>
+		</div>
+	</div>
     </main>
     <!-- FIN DE MAIN -->
 
@@ -160,5 +174,6 @@
 
     <!-- javascript -->
     <script src="./js/script.js"></script>
+    <script src="./js/user.js"></script>
 </body>
 </html>
