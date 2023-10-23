@@ -22,9 +22,12 @@ fetch(url)
 
     cad=`
         
-            <h4><img class="izquierdapop" src="./img/usupremium.png" alt="usup"> ${users[0].name}  </h4>
-            <h4>${users[1].name}  </h4>
-            <h4> ${users[2].name}  </h4>
+           <img class="izquierdapop" src="./img/usupremium.png" alt="usup"> <p> <strong>${users[0].name} </strong> <br>
+	        Usuarios: ${users[0].username}. Email: ${users[0].email} </p><br>
+            <p> <strong>${users[1].name}   </strong> <br>
+			Usuarios: ${users[1].username}. Email: ${users[1].email} </p><br>
+			<p> <strong> ${users[2].name}   </strong> <br>
+			Usuarios: ${users[2].username}. Email: ${users[2].email} </p><br>
            
              
         `
